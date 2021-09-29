@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 5, 2021, 8:49:38 PM
+    Author     : sidibe
+*/
+
+/*Chat container*/
+#chatContainerForUser
+{
+    width: 327px;
+    height: 451px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 1px;
+    right: 100px;
+    opacity: 0;
+    z-index: -1
+
+}
+#newMsgInputForUser
+{
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #e4e6eb;
+}
+
+#newMsgInputForUser:focus
+{
+    outline: none;
+}
+#chatContainerForUser footer
+{
+    display: grid;
+    grid-template-columns:auto 40px;
+    padding: 10px;
+
+}
+#textArea:focus
+{
+    outline: none;
+}
+
+ul li{
+    color: white
+}
+
+.start-of-flex
+{
+    align-self: flex-start;color: #000!important;background: #f1f1f1;padding: 6px;
+    border-radius:32px;
+}
+.end-of-flex
+{
+    align-self: flex-end;color: #000!important;border: 1px solid white;background: #fbd2e0;padding: 6px;
+    border-radius:32px
+}
+
+.start-of-flex-for-image
+{
+    align-self: flex-start;
+}
+
+.end-of-flex-for-image
+{
+    align-self: flex-end;
+
+}
+.emoji-size{
+    font-size: 24px;margin: 2px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #chatContainerForUser
+    {
+        width: 100%;
+        height: 451px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color:#fff;
+        position:fixed!important;
+        bottom: 0;
+
+    } 
+
+}

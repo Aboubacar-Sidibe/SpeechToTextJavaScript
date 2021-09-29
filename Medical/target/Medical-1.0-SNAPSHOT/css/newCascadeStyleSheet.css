@@ -1,0 +1,114 @@
+
+.container {
+    display: grid;
+    grid-template: auto auto auto / auto auto;
+    grid-gap: rem(16);
+    width: 100%;
+    height: 100%;
+    max-width: rem(960);
+
+
+}
+
+.container .example {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background-color: white;
+    width: 100%;
+    min-width: rem(300);
+    height: rem(200);
+    overflow: hidden;
+    border: rem(1) solid rgba(0, 0, 0, 0.24);
+    border-radius: rem(8);
+
+}
+
+.appbar .bottom
+{
+    position: relative;
+    display: grid;
+    width: 100%;
+    color: white;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.appbar .bottom .normal
+{
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+.appbar .bottom .normal a
+{
+    will-change: color;
+    transition: color 170ms ease-out;
+    display: inline-block;
+    margin: 0 rem(4);
+    padding: rem(8);
+    color: #fff;
+    font-size: 0;
+    text-decoration: none; 
+}
+
+.appbar .bottom .spacer
+{
+    background-color: red;
+
+}
+.appbar .bottom .cutout
+{
+    background-color: red;
+
+}
+.appbar .bottom .fab
+{
+    will-change: box-shadow, transform;
+    transform: box-shadow 170ms ease-out;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(56);
+    height: rem(56);
+    padding: 0;
+    background-color: green;
+    color: blue;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    transform: translateX(-50%);
+}
+.appbar .bottom .fab .end
+
+{
+    left: auto;
+    right: rem(16);
+    transform: translateX(0);
+}
+
+.appbar {
+    width: 100%;
+    min-height: rem(56);   
+
+}
+
+a {
+    text-decoration: none;
+}
+.end-cut {
+    grid-template: auto / 1fr rem(72) rem(8);
+}
+.end {
+    left: auto;
+    right: rem(16);
+    transform: translateX(0);
+}
+
+.flex--right {
+    justify-content: flex-end;
+}
+

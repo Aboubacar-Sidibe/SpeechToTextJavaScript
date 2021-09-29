@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 25, 2019, 4:24:51 PM
+    Author     : sidibe
+*/
+
+  
+            .container__example {
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                background-color: white;
+                width: 100%;
+                min-width: 18.75rem;
+                overflow: hidden;
+                border: 0.0625rem solid rgba(0, 0, 0, 0.24);
+                border-radius: 0.5rem;
+            }
+            .container__example:last-child {
+                grid-column: 1 / -1;
+            }
+            .container .description {
+                font-family: 'Roboto Slab';
+                font-weight: 400;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0;
+                padding: 0.5rem 1rem;
+            }
+
+
+
+            .appbar {
+                width: 100%;
+                min-height: 3.5rem;
+            }
+            .appbar__bottom {
+                 position: fixed;
+                bottom: 0;
+                display: grid;
+                width: 100%;
+            }
+            .appbar__bottom--normal {
+                display: flex;
+                align-items: center;
+                background-color:  #a91143 !important;
+            }
+            .appbar__bottom--normal a {
+                display: inline-block;
+                margin: 0 0.25rem;
+                padding: 0.5rem;
+                color: rgba(255, 255, 255, 1);
+                font-size: 0;
+                text-decoration: none;
+            }
+
+            .appbar__bottom--spacer {
+                background-color:  #a91143 !important;
+            }
+            .appbar__bottom--cutout {
+                width: 5rem;
+                max-width: 5rem;
+                background: #a91143 !important;
+                -webkit-clip-path: url(#appbar__cutout);
+                clip-path: url(#appbar__cutout);
+            }
+            .appbar__bottom--fab {
+                -webkit-transform: box-shadow 170ms ease-out;
+                transform: box-shadow 170ms ease-out;
+                position: absolute;
+                top: -50%;
+                left: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3.5rem;
+                height: 3.5rem;
+                padding: 0;
+                background-color: #f279a1 !important;
+                color: white;
+                border-radius: 50%;
+                box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+           
+            .appbar__bottom--fab-end {
+                left: auto;
+                right: 1rem;
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            .appbar__bottom--fab:hover, .appbar__bottom--fab:focus {
+                box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+            }
+           
+           
+            .appbar__bottom--end-cut {
+                grid-template: auto/1fr 4.7rem 0.5rem;
+            }
+            .appbar__bottom--no-fab {
+                grid-template: auto / 1fr 1fr;
+            }
+            .appbar a {
+                text-decoration: none;
+            }
+
+            .flex--right {
+                justify-content: flex-end;
+            }

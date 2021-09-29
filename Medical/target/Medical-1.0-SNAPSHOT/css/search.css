@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 5, 2021, 12:01:51 PM
+    Author     : sidibe
+*/
+
+#rechercheBar{
+    display: grid;
+    grid-template-columns:100px auto 50px; 
+    align-items: center;
+    background: #ffffff;
+    width: 650px;
+    border-radius: 26px;
+    margin-bottom: 6px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #rechercheBar{
+        display: grid;
+        grid-template-columns: auto auto auto; 
+        width: 350px;
+        background: #ffffff;
+    }
+}
